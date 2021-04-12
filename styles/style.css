@@ -4,4 +4,98 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+body {
+  background-color: #252836;
+}
+
+.sidebar {
+  padding: 20px 0px;
+  background-color: #1f1d2b;
+  height: 100vh;
+  width: 104px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 0px 15px 15px 0px;
+}
+
+.sidebar-menu {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-bottom: 50px;
+}
+
+.sidebar-logo {
+  background-color: #ea966942;
+  width: 56px;
+  height: 56px;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidebar-menu-item {
+  width: 56px;
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+.active-item > * {
+  position: relative;
+  z-index: 10;
+}
+
+.active-item::before {
+  content: url("../images/sidebar-active-item.svg");
+  position: absolute;
+  z-index: 0;
+  left: -10px;
+}
+
+.active-item::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 56px;
+  height: 56px;
+  background-color: #ea7c69;
+  border-radius: 15px;
+}
 /*# sourceMappingURL=style.css.map */
