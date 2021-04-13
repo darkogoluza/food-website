@@ -16,3 +16,49 @@ main {
   display: grid;
   grid-template-columns: 104px 1fr 406px;
 }
+
+@media only screen and (max-width: 1485px) {
+  .main-content-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 1246px) {
+  .main-content-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .menu-tabs {
+    font-size: 0.85em;
+    & > p {
+      padding-right: 35px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1084px) {
+  main {
+    grid-template-columns: 104px 1fr 306px;
+  }
+  .order {
+    width: 306px;
+  }
+}
+
+@media only screen and (max-width: 908px) {
+  .main-content-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .main-title {
+    flex-direction: column;
+    align-items: flex-start;
+    height: 150px;
+  }
+
+  .menu-tabs {
+    font-size: 0.65;
+    & > p {
+      padding-right: 5%;
+    }
+  }
+}

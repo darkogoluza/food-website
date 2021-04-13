@@ -1,5 +1,6 @@
 .main-section {
   padding: 25px 25px 0px 25px;
+  grid-column: 2/3;
 }
 
 .main-title {
@@ -17,6 +18,10 @@
     background-color: #2d303e;
     color: #abbbc2;
     padding-left: 35px;
+
+    &:focus {
+      outline: none;
+    }
   }
   img {
     position: absolute;
@@ -40,6 +45,14 @@
   border-bottom: 1px solid #393c49;
   padding-bottom: 15px;
   margin-bottom: 25px;
+
+  p {
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  p:hover {
+    color: #ea7c69;
+  }
 
   & > p {
     padding-right: 50px;
@@ -101,6 +114,14 @@
   padding-top: 120px;
   padding-bottom: 30px;
   font-size: 0.7em;
+
+  cursor: pointer;
+  border-color: #393c4900;
+  transition: border 0.2s ease-in;
+
+  &:hover {
+    border: 3px solid #393c49;
+  }
 
   img {
     width: 132px;

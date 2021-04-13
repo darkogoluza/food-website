@@ -7,6 +7,9 @@
   align-items: center;
   justify-content: space-between;
   border-radius: 0px 15px 15px 0px;
+
+  position: fixed;
+  width: 104px;
 }
 
 .sidebar-menu {
@@ -20,14 +23,36 @@
 .sidebar-logo {
   background-color: #ea966942;
   width: 56px;
-  height: 64px;
+  height: 56px;
   border-radius: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  flex-shrink: 0;
   img {
     width: 36px;
     height: 36px;
+  }
+}
+
+.sidebar-logout {
+  width: 56px;
+  height: 56px;
+
+  border-radius: 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-shrink: 0;
+
+  border-color: #ea7c6900;
+  transition: border 0.2s ease-in-out;
+
+  &:hover {
+    border: 2px solid #ea7c69;
   }
 }
 
@@ -41,6 +66,17 @@
 
   position: relative;
   z-index: 10;
+
+  cursor: pointer;
+
+  border-radius: 15px;
+
+  border-color: #ea7c6900;
+  transition: border 0.2s ease-in-out;
+
+  &:hover {
+    border: 2px solid #ea7c69;
+  }
 }
 
 .active-item > * {
